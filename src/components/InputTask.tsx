@@ -1,9 +1,9 @@
-import {useRecoilValue} from "recoil";
+import {useRecoilState } from "recoil";
 import {inputTitleState} from "../states/inputTitleState.ts";
 
 export const InputTask = () => {
 
-        const inputTitle = useRecoilValue(inputTitleState);
+        const inputTitle = useRecoilState(inputTitleState);
 
         const handleClick = () => {
             console.log(inputTitle);
